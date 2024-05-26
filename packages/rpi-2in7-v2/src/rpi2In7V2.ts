@@ -12,8 +12,11 @@ export class Rpi2In7 implements DisplayDevice {
             throw new Error('Only black color mode is supported');
         }
         this.driver = bindings('waveshare2in7v2');
-        this.width = this.orientation === Orientation.Horizontal ? 264 : 176;
-        this.height = this.orientation === Orientation.Horizontal ? 176 : 264;
+
+        const side1 = 264;
+        const side2 = 176;
+        this.width = this.orientation === Orientation.Horizontal ? side1 : side2;
+        this.height = this.orientation === Orientation.Horizontal ? side2 : side1;
     }
 
     public connect(): void {
