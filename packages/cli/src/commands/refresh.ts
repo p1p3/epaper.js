@@ -25,7 +25,6 @@ export class RefreshCommand implements Command<RefreshArgs> {
 
         while (true) {
             const imgOfUrl = await this.browserPage.screenshot(url, {
-                delay: refreshArgs.screenshotDelay,
                 username: refreshArgs.username,
                 password: refreshArgs.password,
             });

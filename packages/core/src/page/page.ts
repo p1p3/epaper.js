@@ -1,8 +1,7 @@
-import puppeteer from 'puppeteer-core';
+import { Browser, Page } from 'puppeteer-core';
 import { Logger } from '../logger';
 
 export interface ScreenshotOptions {
-    delay?: number;
     username?: string;
     password?: string;
 }
@@ -11,8 +10,8 @@ export class BrowserPage {
     private readonly HTTP_NOT_MODIFIED = 304;
 
     constructor(
-        private readonly browser: puppeteer.Browser,
-        private readonly browserPage: puppeteer.Page,
+        private readonly browser: Browser,
+        private readonly browserPage: Page,
         private readonly logger?: Logger
     ) {
         this.browserPage.on('console', (msg) => {
@@ -29,11 +28,6 @@ export class BrowserPage {
         });
         if (!response?.ok() && response?.status() !== this.HTTP_NOT_MODIFIED) {
             throw new Error(`Error occurred navigating to ${url}: ${response?.statusText()}`);
-        }
-        if (options.delay) {
-            this.logger?.debug(`Waiting an additional ${options.delay}ms before taking screenshot`);
-            await this.browserPage.waitForTimeout(options.delay);
-            this.logger?.debug('Screenshot delay complete');
         }
 
         return (await this.browserPage.screenshot({
