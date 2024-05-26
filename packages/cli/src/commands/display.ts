@@ -1,4 +1,6 @@
-import { ColorMode, DisplayDevice, getPageRpi, Orientation, BrowserPage, Logger } from '@epaperjs/core';
+// TODO FELJA
+// import { ColorMode, DisplayDevice, getPageRpi, Orientation, BrowserPage, Logger } from '@epaperjs/core';
+import { ColorMode, DisplayDevice, getPageRpi, Orientation, BrowserPage, Logger } from '../../../core';
 import { getDevice } from '../deviceFactory';
 import { Command } from './command';
 

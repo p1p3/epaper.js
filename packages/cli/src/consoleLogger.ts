@@ -1,4 +1,6 @@
-import { Logger } from '@epaperjs/core';
+// TODO FELJA
+import { Logger } from '../../core';
+// import { Logger } from '@epaperjs/core';
 
 export class ConsoleLogger implements Logger {
     constructor(private readonly debugEnabled: boolean = false) {}

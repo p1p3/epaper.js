@@ -1,4 +1,6 @@
-import { DisplayDevice, getPageRpi, BrowserPage, Logger } from '@epaperjs/core';
+// TODO FELJA
+// import { DisplayDevice, getPageRpi, BrowserPage, Logger } from '@epaperjs/core';
+import { DisplayDevice, getPageRpi, BrowserPage, Logger } from '../../../core';
 import { getDevice } from '../deviceFactory';
 import { Command } from './command';
 import { DisplayArgs } from './display';

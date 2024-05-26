@@ -1,4 +1,6 @@
-import { DisplayDevice, Logger } from '@epaperjs/core';
+// TODO FELJA
+// import { DisplayDevice, Logger } from '@epaperjs/core';
+import { DisplayDevice, Logger } from '../../../core';
 import { getDevice } from '../deviceFactory';
 import { Command } from './command';
 
