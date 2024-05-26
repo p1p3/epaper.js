@@ -1,4 +1,6 @@
 import { ColorMode, DisplayDevice, Orientation } from '@epaperjs/core';
+// TODO FELJA REMOVE
+import { Rpi2In7V2 } from '@epaperjs/rpi-2in7-v2';
 
 export async function getDevice(
     deviceType: string,
@@ -69,7 +71,7 @@ async function getRpi2In7(orientation?: Orientation, colorMode?: ColorMode): Pro
 
 async function getRpi2In7V2(orientation?: Orientation, colorMode?: ColorMode): Promise<DisplayDevice> {
     try {
-        const { Rpi2In7V2 } = await import('@epaperjs/rpi-2in7-v2');
+        // const { Rpi2In7V2 } = await import('@epaperjs/rpi-2in7-v2');
         return new Rpi2In7V2(orientation, colorMode);
     } catch (e) {
         throw new Error('Failed to import @epaperjs/rpi-2in7-v2, make sure it is installed');
