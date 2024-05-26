@@ -72,7 +72,7 @@ async function getRpi2In7V2(orientation?: Orientation, colorMode?: ColorMode): P
         const { Rpi2In7V2 } = await import('@epaperjs/rpi-2in7-v2');
         return new Rpi2In7V2(orientation, colorMode);
     } catch (e) {
-        throw new Error('Failed to import @epaperjs/rpi-2in7, make sure it is installed');
+        throw new Error('Failed to import @epaperjs/rpi-2in7-v2, make sure it is installed');
     }
 }
 

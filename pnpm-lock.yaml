@@ -38,6 +38,9 @@ importers:
         version: link:../rpi-2in13-v2
       '@epaperjs/rpi-2in7':
         specifier: workspace:^
+        version: link:../rpi-2in7
+      '@epaperjs/rpi-2in7-v2':
+        specifier: workspace:^
         version: link:../rpi-2in7-v2
       '@epaperjs/rpi-3in7':
         specifier: workspace:^
