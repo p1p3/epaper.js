@@ -30,15 +30,3 @@ jobs:
         run: pnpm -r build:clean
       - name: Build Typescript
         run: pnpm build:clean
-      - name: create and publish versions
-        uses: changesets/action@v1
-        with:
-          version: pnpm ci:version
-          commit: 'chore: update versions'
-          title: 'chore: update versions'
-          publish: pnpm ci:publish
-        env:
-          registry-url: 'https://npm.pkg.github.com'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
