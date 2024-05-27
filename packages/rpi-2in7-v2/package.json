@@ -33,8 +33,5 @@
     "gypfile": true,
     "devDependencies": {
         "@types/bindings": "^1.5.1"
-    },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com"
     }
 }
