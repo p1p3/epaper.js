@@ -68,8 +68,5 @@
         "@p1p3/epaperjs-rpi-3in7": {
             "optional": true
         }
-    },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com"
     }
 }
