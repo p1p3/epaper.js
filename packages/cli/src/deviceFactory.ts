@@ -1,7 +1,6 @@
+import { ColorMode, DisplayDevice, Orientation } from '@epaperjs/core';
 // TODO FELJA REMOVE
-// import { ColorMode, DisplayDevice, Orientation } from '@epaperjs/core';
-import { ColorMode, DisplayDevice, Orientation } from '../../core';
-import { Rpi2In7V2 } from '../../rpi-2in7-v2';
+import { Rpi2In7V2 } from '@epaperjs/rpi-2in7-v2';
 
 export async function getDevice(
     deviceType: string,
