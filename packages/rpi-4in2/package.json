@@ -1,5 +1,5 @@
 {
-    "name": "@epaperjs/rpi-4in2",
+    "name": "@p1p3/epaperjs-rpi-4in2",
     "version": "2.0.5",
     "private": false,
     "description": "ePaper.js support for Waveshare 4.2\" display",
@@ -25,7 +25,7 @@
         "build:clean": "pnpm clean && pnpm build"
     },
     "dependencies": {
-        "@epaperjs/core": "workspace:^",
+        "@p1p3/epaperjs-core": "workspace:^",
         "bindings": "^1.5.0",
         "node-addon-api": "^4.2.0",
         "node-gyp": "^8.4.1"

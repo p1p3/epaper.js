@@ -1,4 +1,4 @@
-import { DisplayDevice, getPageRpi, BrowserPage, Logger } from '@epaperjs/core';
+import { DisplayDevice, getPageRpi, BrowserPage, Logger } from '@p1p3/epaperjs-core';
 import { getDevice } from '../deviceFactory';
 import { Command } from './command';
 import { DisplayArgs } from './display';
