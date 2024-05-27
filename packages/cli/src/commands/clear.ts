@@ -1,4 +1,4 @@
-import { DisplayDevice, Logger } from '@epaperjs/core';
+import { DisplayDevice, Logger } from '@p1p3/epaperjs-core';
 import { getDevice } from '../deviceFactory';
 import { Command } from './command';
 

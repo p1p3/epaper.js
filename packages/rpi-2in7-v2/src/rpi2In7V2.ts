@@ -1,9 +1,9 @@
-import { ColorMode, DisplayDevice, Monochrome, Orientation } from '@epaperjs/core';
-import { ImageOptions } from '@epaperjs/core/src/image/imageOptions';
+import { ColorMode, DisplayDevice, Monochrome, Orientation } from '@p1p3/epaperjs-core';
+import { ImageOptions } from '@p1p3/epaperjs-core/src/image/imageOptions';
 import bindings from 'bindings';
 import { Driver } from './driver';
 
-export class Rpi2In7 implements DisplayDevice {
+export class Rpi2In7V2 implements DisplayDevice {
     public readonly height: number;
     public readonly width: number;
     private readonly driver: Driver;
@@ -12,8 +12,11 @@ export class Rpi2In7 implements DisplayDevice {
             throw new Error('Only black color mode is supported');
         }
         this.driver = bindings('waveshare2in7v2');
-        this.width = this.orientation === Orientation.Horizontal ? 264 : 176;
-        this.height = this.orientation === Orientation.Horizontal ? 176 : 264;
+
+        const side1 = 264;
+        const side2 = 176;
+        this.width = this.orientation === Orientation.Horizontal ? side1 : side2;
+        this.height = this.orientation === Orientation.Horizontal ? side2 : side1;
     }
 
     public connect(): void {

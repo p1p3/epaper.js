@@ -1,4 +1,4 @@
-import { ColorMode, DisplayDevice, getPageRpi, Orientation, BrowserPage, Logger } from '@epaperjs/core';
+import { ColorMode, DisplayDevice, getPageRpi, Orientation, BrowserPage, Logger } from '@p1p3/epaperjs-core';
 import { getDevice } from '../deviceFactory';
 import { Command } from './command';
 

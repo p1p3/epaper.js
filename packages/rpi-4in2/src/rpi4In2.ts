@@ -1,5 +1,5 @@
-import { ColorMode, DisplayDevice, GrayLR, Monochrome, Orientation } from '@epaperjs/core';
-import { ImageOptions } from '@epaperjs/core/src/image/imageOptions';
+import { ColorMode, DisplayDevice, GrayLR, Monochrome, Orientation } from '@p1p3/epaperjs-core';
+import { ImageOptions } from '@p1p3/epaperjs-core/src/image/imageOptions';
 import bindings from 'bindings';
 import { Driver } from './driver';
 
